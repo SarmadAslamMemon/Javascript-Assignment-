@@ -1,0 +1,1 @@
+alert("Bren mick said that \"Be patient You will be successfull \" ")

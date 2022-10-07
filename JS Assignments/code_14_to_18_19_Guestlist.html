@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+</head> 
+<h1 > بسم الله الرحمن الرحيم </h1>
+<body>
+        <script > 
+            let Guest=["Ahmed","Hassan","Hussain"];
+            for(let i=0;i<Guest.length;i++)
+            document.write("<br>"+"Assalamualaikum"+" "+"<b>"+Guest[i]+"</b> "+"I would like to invite you on my Dinner Party I hope we can enjoy together"+"<br>");
+            document.write("<hr>"+"</hr>")
+            document.write("Unfortunetly"+" "+"<b>"+Guest[0]+"</b>"+" "+"cant Attend our Dinner party!"+"<br>"+"We have now updated list of Guests"+"<br>");
+          
+           // Adding new member for dinner party!
+
+           Guest[0]=("Asif");
+           document.write("<br>"+"<b>"+Guest+"</b>"+"<br>")
+
+           // Sending messages to updated list of our friends
+
+           for(let i=0;i<Guest.length;i++)
+            {
+              document.write("<br>"+"Assalamualaikum"+" "+"<b>"+Guest[i]+"</b> "+"I would like to invite you on my Dinner Party I hope we can enjoy together"+"<br>");
+            }
+            document.write("<hr>"+"</hr>")
+            document.write("We have find a bigger table for dinner"+"<br>"+"</br>"+"Lets invite few more friends!"+"<br>")
+            Guest.unshift("Ahsan","Ali")
+            document.write(Guest)
+            document.write("<hr>"+"</hr>")
+
+            //Shrinked list of Guests
+
+            document.write("AH! we can invite only two peoples for dinner"+"<br>");
+            document.write("<hr>"+"</hr>")
+           for(let i=0;i<Guest.length;i++)
+            {
+              document.write("I am really Sorry"+" "+"<b>"+Guest.pop()+"</b>"+" "+"I cant invite you on my party"+"<br>")
+
+            }
+            document.write("<hr>"+"</hr>")
+
+          /// Sending message to remaining two friends
+
+            for(let i=0;i<Guest.length;i++)
+           {
+            document.write("Fortunetly:"+" "+"<b>"+Guest[i]+"</b>"+"You are still invited for my  party"+"<br>")
+           }
+
+           // Clearing every memeber of my array! Making array empty 
+           
+           for(let i=0;i<=Guest.length;i++)
+            {
+              document.write("I am really Sorry"+" "+"<b>"+Guest.pop()+"</b>"+" "+"I cant invite you on my party"+"<br>")
+
+            }
+            document.write("Our array is Empty now:[ "+Guest+']'+"<br>")
+
+            // printing number of Guests i am inviting 
+            document.write("Here is the Number of Guests i am inviting for dinner:"+" "+Guest.length)    
+
+    
+           
+     </script>
+   
+
+</body>
+</html>
